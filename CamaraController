@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class CamaraController : MonoBehaviour {
+    public GameObject playerCode;
+    private Vector3 deslocamento;
+    
+    void Start()
+    {
+        deslocamento = transform.position;
+    }
+
+    void Update()
+    {
+        transform.position = playerCode.transform.position + deslocamento;
+    }
+
+}
